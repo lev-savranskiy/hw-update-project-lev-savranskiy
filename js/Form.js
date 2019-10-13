@@ -54,7 +54,7 @@ class Form {
         if(str.length >= min && str.length <= max) {
             return "";
         }
-        return "Должно быть от 2 до 30 символов";
+        return `Должно быть от ${min} до ${max} символов`;
     }
 
     validateURL(str) {
