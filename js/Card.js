@@ -61,7 +61,7 @@ class Card {
 
     // Method remove
     remove() {
-        this.cardEl.parentNode.removeChild(this.cardEl);
+        this.cardEl.remove();
     }
 
     // Method toggleBigSizeImage
@@ -70,7 +70,7 @@ class Card {
                         <img src="./images/close.svg" alt="Close" class="popup__close">
                         <img src="${this.data.link}"  alt="View Image" class="popup__image">
                     </div>`;
-       new Popup({innerHTML: tpl}).open();
+        new Popup({innerHTML: tpl}).open();
     }
 }
 
